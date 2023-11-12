@@ -159,7 +159,7 @@ padding: 0.2rem;
 @media screen and (min-width: 1000px){
     #article{
         flex-direction: column;
-        height: 80rem;
+        height: auto;
     }
     #article .photo{
         margin: 0 4rem;
