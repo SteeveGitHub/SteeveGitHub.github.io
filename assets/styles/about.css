@@ -62,6 +62,7 @@
         align-items: flex-start;
         justify-content: space-evenly;
         margin: 0 2rem;
+        height: 80%;
     }
 
     #about .presentation-buttons{
