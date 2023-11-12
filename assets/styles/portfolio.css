@@ -1,0 +1,158 @@
+.project-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#portfolio .photo{
+    /*width: 40rem;*/
+    margin: 0 4rem;
+    /*width: 50%;*/
+    width: 20rem;
+    height: 10rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: 0.5s;
+}
+#portfolio .photo:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: 0.5s;
+}
+.project-description h2{
+    width: 100%;
+    /*padding-left: 2rem;*/
+    text-align: center;
+    font-size: 4rem;
+}
+.project-description h2 span{
+    color: #FFBD00;
+    font-size: 4rem;
+}
+
+#portfolio .portfolio-redirection img{
+    width: 2rem;
+}
+
+.project-text{
+    font-size: 2rem;
+    line-height: 4rem;
+    width: 100%;
+    /*margin: 0 auto;*/
+    /*padding-bottom: 4rem;*/
+}
+
+.project-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    /*padding: 8rem 0;*/
+}
+.project-block:nth-child(even){
+    /*flex-direction: column-reverse;*/
+}
+.portfolio-redirection{
+    /*width: 50%;*/
+    text-align: justify;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+.case-study{
+    text-decoration: none;
+    color: #024E31;
+    transition: 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.clickable-section{
+    text-decoration: none;
+}
+.case-study p{
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1000px){
+    #portfolio .photo{
+        /*width: 40rem;*/
+        margin: 0 4rem;
+        width: 50%;
+        height: 20rem;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        transition: 0.5s;
+
+    }
+    #portfolio .photo:hover{
+        cursor: pointer;
+        transform: scale(1.04);
+        transition: 0.5s;
+    }
+    .project-description h2{
+        width: 40%;
+        padding-left: 2rem;
+        text-align: center;
+        font-size: 4rem;
+    }
+    .project-description h2 span{
+        color: #FFBD00;
+        font-size: 4rem;
+    }
+
+    #portfolio .portfolio-redirection img{
+        width: 2rem;
+    }
+
+    .project-text{
+        font-size: 2rem;
+        line-height: 4rem;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 4rem;
+    }
+
+    .project-block{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 2rem 0;
+    }
+    .project-block:nth-child(even){
+        flex-direction: column-reverse;
+    }
+    .portfolio-redirection{
+        width: 100%;
+        text-align: justify;
+        padding: 0 2rem;
+    }
+    .case-study{
+        text-decoration: none;
+        color: #024E31;
+        transition: 0.3s ease;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        margin: 0 auto;
+
+    }
+
+    .clickable-section{
+        text-decoration: none;
+    }
+    .case-study p{
+        font-size: 2rem;
+        text-decoration: none;
+    }
+
+
+
+
+}

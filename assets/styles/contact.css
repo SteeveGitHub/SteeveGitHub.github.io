@@ -1,0 +1,169 @@
+#contact{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #F4F4F4;
+  align-items: center;
+  padding: 2rem 0 1rem 0;
+  border-radius: 2rem;
+}
+
+#contact h2 {
+    width: 100%;
+    /*padding-left: 2rem;*/
+    text-align: center;
+    font-size: 4rem;
+}
+
+#contact h2 span{
+  color: #FFBD00;
+    font-size: 4rem;
+}
+
+#contact .form-container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+#contact .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .form-group label {
+  font-size: 2rem;
+  color: #333333;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+
+#contact .form-group input,
+#contact .form-group textarea {
+  padding: 0.5rem;
+  border: 1px solid #CCCCCC;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+#contact .form-group textarea {
+  resize: vertical;
+}
+
+#contact .side-paragraph {
+  padding-left: 2rem;
+  width: 100%;
+}
+
+#contact .side-paragraph p {
+  font-size: 2rem;
+  color: #333333;
+  /*font-size: 3rem;*/
+    line-height: 6rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    /*padding-bottom: 4rem;*/
+}
+
+#contact .form-group button{
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 1000px){
+  #contact{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contact .contact-form {
+    display: flex;
+    flex-direction: row;
+    background-color: #F4F4F4;
+    align-items: center;
+    padding: 2rem 0 6rem 0;
+    border-radius: 2rem;
+  }
+
+  #contact h2 {
+    width: 40%;
+    padding-left: 2rem;
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  #contact h2 span{
+    color: #FFBD00;
+    font-size: 4rem;
+  }
+
+  #contact .form-container {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+  }
+
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 70%;
+  }
+
+  #contact .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contact .form-group label {
+    font-size: 2rem;
+    color: #333333;
+    font-weight: 700;
+    padding: 1rem 0;
+  }
+
+  #contact .form-group input,
+  #contact .form-group textarea {
+    padding: 0.5rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+
+  #contact .form-group textarea {
+    resize: vertical;
+  }
+
+  #contact .side-paragraph {
+    padding-left: 2rem;
+    width: 30%;
+  }
+
+  #contact .side-paragraph p {
+    /*font-size: 1rem;*/
+    color: #333333;
+    font-size: 3rem;
+    line-height: 6rem;
+    padding: 0 2rem;
+
+    margin: 0 auto;
+    padding-bottom: 4rem;
+  }
+
+  #contact .form-group button{
+    margin: 2rem 0;
+  }
+
+}

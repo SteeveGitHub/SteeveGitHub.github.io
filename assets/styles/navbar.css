@@ -1,0 +1,345 @@
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #F4F4F4;
+    padding: 1rem;
+    margin: 1rem;
+    position: fixed;
+    width: 90%;
+    border-radius: 2rem;
+    /*box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    !*margin: 0 auto;*!*/
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    z-index: 999;
+
+}
+.navbar{
+    transition: 0.3s ease;
+}
+
+.s-nav-icon {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.s-nav-icon a img {
+    width: 3rem;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.menu-nav ul {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+
+}
+
+.menu-nav ul a {
+    text-decoration: none;
+    color: #000;
+    border-left: 2px solid rgba(255, 255, 255, 0);
+    border-right: 2px solid rgba(255, 255, 255, 0);
+    /*padding: 1rem;*/
+    transition: 0.5s;
+    font-size: 1rem;
+    padding: 0.2rem;
+
+}
+
+.menu-nav ul a:hover {
+    border-right: #FFBD00 2px solid;
+    border-left: #FFBD00 2px solid;
+    border-radius: 2rem;
+    transition: 0.5s;
+    padding: 0.2rem;
+}
+
+.lets-talk {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+}
+
+.lets-talk button,
+.presentation-buttons button:nth-child(1),
+#contact .form-group button,
+.case-study{
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #024E31;
+    cursor: pointer;
+    display: inline-flex;
+    /*font-family: "JetBrains Mono", monospace;*/
+    /*height: 2rem;*/
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding: 1rem;
+    /*margin-bottom: 0.5rem;*/
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 2rem;
+}
+
+.lets-talk button:focus,
+.presentation-buttons button:nth-child(1):focus,
+#contact .form-group button:focus{
+    box-shadow: #FFBD00 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.lets-talk button:hover,
+.presentation-buttons button:nth-child(1):hover,
+#contact .form-group button:hover,
+.case-study:hover{
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+    background-color: #FFF;
+    color: #024E31;
+}
+
+.lets-talk button a,
+.presentation-buttons button:nth-child(1) a,
+#contact .form-group button{
+    color: #024E31;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.presentation-buttons button:nth-child(2){
+    align-items: center;
+    appearance: none;
+    background-color: #024E31;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #024E31 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #024E31;
+    cursor: pointer;
+    display: inline-flex;
+    /*font-family: "JetBrains Mono", monospace;*/
+    /*height: 2rem;*/
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding: 1.5rem;
+    /*margin-bottom: 0.5rem;*/
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 2rem;
+    height: 100%;
+}
+.presentation-buttons button:nth-child(2):focus{
+    box-shadow: #024E31 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+.presentation-buttons button:nth-child(2):hover{
+box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #024E31 0 -3px 0 inset;
+transform: translateY(-2px);
+    background-color: #024E31;
+    color: #024E31;
+}
+.presentation-buttons button:nth-child(2) a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 1000px){
+    nav {
+        display: flex;
+        align-items: center;
+        background-color: #F4F4F4;
+        padding: 1rem;
+        margin: 1rem;
+        position: fixed;
+        width: 90%;
+        border-radius: 2rem;
+        /*box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    !*margin: 0 auto;*!*/
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        z-index: 999;
+
+    }
+    .navbar{
+        transition: 0.3s ease;
+    }
+
+    .s-nav-icon {
+        width: 15%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .s-nav-icon a img {
+        width: 4rem;
+    }
+
+    .menu-nav {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+    }
+
+    .menu-nav ul {
+        display: flex;
+        width: 100%;
+        list-style-type: none;
+        justify-content: space-around;
+        padding: 0;
+
+    }
+
+    .menu-nav ul a {
+        text-decoration: none;
+        color: #000;
+        border-left: 2px solid rgba(255, 255, 255, 0);
+        border-right: 2px solid rgba(255, 255, 255, 0);
+        padding: 1rem;
+        transition: 0.5s;
+        font-size: 1.5rem;
+
+    }
+
+    .menu-nav ul a:hover {
+        border-right: #FFBD00 2px solid;
+        border-left: #FFBD00 2px solid;
+        border-radius: 2rem;
+        transition: 0.5s;
+    }
+
+    .lets-talk {
+        display: flex;
+        justify-content: center;
+        width: 15%;
+    }
+
+    .lets-talk button,
+    .presentation-buttons button:nth-child(1),
+    #contact .form-group button,
+    .case-study{
+        align-items: center;
+        appearance: none;
+        background-color: #FCFCFD;
+        border-radius: 4px;
+        border-width: 0;
+        box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: #024E31;
+        cursor: pointer;
+        display: inline-flex;
+        /*font-family: "JetBrains Mono", monospace;*/
+        /*height: 2rem;*/
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding: 1.5rem;
+        margin-bottom: 0.5rem;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        transition: box-shadow .15s, transform .15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow, transform;
+        font-size: 2rem;
+    }
+
+    .lets-talk button:focus,
+    .presentation-buttons button:nth-child(1):focus,
+    #contact .form-group button:focus{
+        box-shadow: #FFBD00 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    }
+
+    .lets-talk button:hover,
+    .presentation-buttons button:nth-child(1):hover,
+    #contact .form-group button:hover,
+    .case-study:hover{
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+        transform: translateY(-2px);
+        background-color: #FFF;
+        color: #024E31;
+    }
+
+    .lets-talk button a,
+    .presentation-buttons button:nth-child(1) a,
+    #contact .form-group button{
+        color: #024E31;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+
+    .presentation-buttons button:nth-child(2){
+        align-items: center;
+        appearance: none;
+        background-color: #024E31;
+        border-radius: 4px;
+        border-width: 0;
+        box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #024E31 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: #024E31;
+        cursor: pointer;
+        display: inline-flex;
+        /*font-family: "JetBrains Mono", monospace;*/
+        /*height: 2rem;*/
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding: 1.5rem;
+        margin-bottom: 0.5rem;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        transition: box-shadow .15s, transform .15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow, transform;
+        font-size: 2rem;
+    }
+    .presentation-buttons button:nth-child(2):focus{
+        box-shadow: #024E31 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    }
+    .presentation-buttons button:nth-child(2):hover{
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #024E31 0 -3px 0 inset;
+        transform: translateY(-2px);
+        background-color: #024E31;
+        color: #024E31;
+    }
+    .presentation-buttons button:nth-child(2) a{
+        color: #FFF;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+
+}
