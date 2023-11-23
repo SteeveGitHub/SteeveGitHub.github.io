@@ -35,7 +35,7 @@
     justify-content: space-between;
 }
 .service-content .hover:hover{
-    cursor: pointer;
+    /* cursor: pointer; */
     transform: scale(1.05);
     transition: 0.3s;
 }
@@ -120,7 +120,7 @@
         justify-content: space-between;
     }
     .service-content .hover:hover{
-        cursor: pointer;
+        /* cursor: pointer; */
         transform: scale(1.05);
         transition: 0.3s;
     }

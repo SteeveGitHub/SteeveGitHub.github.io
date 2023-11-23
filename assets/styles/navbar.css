@@ -1,6 +1,7 @@
 .my-navigation {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     background-color: #F4F4F4;
     padding: 1rem;
     margin: 1rem;
@@ -173,6 +174,7 @@ transform: translateY(-2px);
 
 @media screen and (min-width: 1000px){
     .my-navigation {
+        justify-content: space-evenly;
         display: flex;
         align-items: center;
         background-color: #F4F4F4;
