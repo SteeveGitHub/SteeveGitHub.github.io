@@ -8,6 +8,7 @@
 #skills .service-content{
     display: flex;
     flex-direction: column;
+    padding: 3rem 0;
     /*flex-wrap: wrap;*/
     align-items: center;
     justify-content: space-evenly;
