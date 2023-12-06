@@ -1,0 +1,36 @@
+.other-page{
+    margin-top: 10rem;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    border-radius: 2rem;
+    background-color: #F4F4F4;
+    height: 100%;
+}
+.other-page img{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.other-page p{
+    width: 90%;
+    text-align: justify;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .other-page h1, .other-page h2, .other-page p{
+        font-size: 2rem;
+    }
+    .other-page p{
+        width: 70%;
+        margin: 4rem 0;
+    }
+
+}
