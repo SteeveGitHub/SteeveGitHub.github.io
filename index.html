@@ -364,7 +364,7 @@
     function sendEmail(event) {
         //   event.preventDefault();
 
-        var email = 'steeve.trincal@gmail.com';
+        var email = document.getElementById("email").value;
         var firstName = document.getElementById("first-name").value;
         var lastName = document.getElementById("last-name").value;
         var message = document.getElementById("message").value;
@@ -376,7 +376,7 @@
 
         window.location.href = mailtoURL; // Redirige vers l'URL du "mailto:"
 
-        document.getElementById("contact-form").reset();
+        // document.getElementById("contact-form").reset();
 
         return false;
     }
