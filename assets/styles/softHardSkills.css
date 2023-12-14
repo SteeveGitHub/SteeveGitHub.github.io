@@ -6,6 +6,10 @@
 
 .soft-and-hard-skills-section span{
   color: #FFBD00;
+  font-size: 2.5rem;
+}
+
+.soft-and-hard-skills-section h2 {
   font-size: 2rem;
 }
 

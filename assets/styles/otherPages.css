@@ -23,6 +23,7 @@
     text-align: justify;
 }
 
+
 @media screen and (min-width: 1000px) {
 
     .other-page h1, .other-page h2, .other-page p{
@@ -33,4 +34,7 @@
         margin: 4rem 0;
     }
 
+}
+.last-img{
+    padding-bottom: 4rem;
 }
