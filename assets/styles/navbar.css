@@ -50,7 +50,7 @@
     /*padding: 1rem;*/
     transition: 0.5s;
     font-size: 1rem;
-    padding: 0.2rem;
+    padding: 0.5rem;
 
 }
 
@@ -59,7 +59,7 @@
     border-left: #FFBD00 2px solid;
     border-radius: 2rem;
     transition: 0.5s;
-    padding: 0.2rem;
+    padding: 0.5rem;
 }
 
 .lets-talk {

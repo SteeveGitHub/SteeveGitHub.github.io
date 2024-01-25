@@ -120,7 +120,7 @@
         line-height: 4rem;
         width: 80%;
         margin: 0 auto;
-        padding-bottom: 4rem;
+        /* padding-bottom: 2rem; */
     }
 
     .project-block{
@@ -135,7 +135,7 @@
     .portfolio-redirection{
         width: 100%;
         text-align: justify;
-        padding: 0 2rem;
+        padding: 2rem 4rem;
     }
     .case-study{
         text-decoration: none;
@@ -153,6 +153,7 @@
 
     .clickable-section{
         text-decoration: none;
+        padding: 2rem 0;
     }
     .case-study p{
         font-size: 2rem;
@@ -170,6 +171,7 @@ hr.dotted {
   
   .container-div-svg{
     position: relative;
+    margin-bottom: 2rem;
   }
 
   .custom-shape-divider-top-1701429379 {

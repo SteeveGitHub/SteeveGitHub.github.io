@@ -92,7 +92,8 @@ transition: 0.5s;
     width: 80%;
 }
 #true-article .container p{
-    font-size: 1.4rem;
+    font-size: 2rem;
+    padding: 1rem 0;
     width: 80%;
     text-align: justify;
     display: flex;
@@ -100,9 +101,10 @@ transition: 0.5s;
     align-items: center;
 }
 #true-article .container p img{
-    height: 45rem;
+    /* height: 45rem; */
+    height: 100%;
     width: 100%;
-    margin: 2rem 0;
+    margin: 4rem 0;
 }
 #true-article .container h3{
     font-size: 3rem;

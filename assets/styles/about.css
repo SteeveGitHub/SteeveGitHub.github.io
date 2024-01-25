@@ -13,7 +13,7 @@
 }
 #about{
     padding: 2rem 0;
-    align-items: center;
+    /* align-items: center; */
 }
 #about .presentation{
     display: flex;
@@ -46,6 +46,8 @@
         display: block;
     }
 
+    
+
     #about,
     #skills,
     #portfolio,
@@ -59,18 +61,25 @@
         margin-top: 1.8rem;
         padding: 6rem 0;
     }
+    #about{
+        padding: 0;
+    }
     #about .presentation{
         display: flex;
         align-items: flex-start;
         justify-content: space-evenly;
         margin: 0 2rem;
-        height: 80%;
+        /* height: 80%; */
     }
     #about .about-me-prez{
-        margin: 0 4rem;
+        margin: auto 4rem;
+        min-height: 60rem;
     }
 
     #about .presentation-buttons{
-        justify-content: center;
+        justify-content: flex-end;
+    }
+    #about .presentation-buttons button{
+        margin-right: 10rem;
     }
 }
