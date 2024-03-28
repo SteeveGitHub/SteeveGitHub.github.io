@@ -19,6 +19,8 @@
 
 .skills-block {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
   margin-top: 30px;
 }
@@ -55,4 +57,15 @@
 .skill-details p {
   color: #666;
   font-size: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .skills-block {
+    flex-direction: row;
+
+  }
+
+  .skill-item {
+    width: 100%;
+  }
 }
