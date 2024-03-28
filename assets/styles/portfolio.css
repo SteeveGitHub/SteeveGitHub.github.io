@@ -6,7 +6,7 @@
 }
 #portfolio .photo{
     /*width: 40rem;*/
-    margin: 2rem 4rem;
+    margin: 0 auto;
     max-width: 90%;
     /*width: 50%;*/
     /* width: 20rem; */
@@ -48,6 +48,11 @@
     align-items: center;
     margin-bottom: 2rem;
     /*padding: 8rem 0;*/
+}
+.project-block a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .project-block:nth-child(even){
     /*flex-direction: column-reverse;*/
@@ -241,3 +246,4 @@ hr.dotted {
 .custom-shape-divider-top-1701429734 .shape-fill {
     fill: #FFBD00;
 }
+

@@ -7,6 +7,7 @@
     border-radius: 2rem;
     background-color: #F4F4F4;
     height: 45rem;
+    overflow: hidden;
 
     /*background-image: url('/assets/images/home_bgd.png');*/
 }
