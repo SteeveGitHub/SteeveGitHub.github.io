@@ -11,6 +11,15 @@
 
     /*background-image: url('/assets/images/home_bgd.png');*/
 }
+.home-container .footer .footer-content p{
+    font-size: 1.5rem;
+}
+.home-container .footer .footer-content .footer-links{
+    width: 95%;
+}
+.home-container .footer .footer-content .footer-links li a{
+    font-size: 1rem;
+}
 .presentation{
     display: flex;
     flex-direction: column;
