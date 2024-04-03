@@ -1,7 +1,7 @@
 @media screen and (min-width: 1000px){
   .footer {
     background-color: #333333;
-    padding: 2rem 4rem;
+    /*padding: 2rem 4rem;*/
     border-radius: 2rem;
     margin-top: 1.8rem;
     border: 1px solid #FFF;
@@ -85,8 +85,9 @@
 
 .footer p {
     margin: 0;
-    /*font-size: 2rem;*/
+    font-size: 2rem;
     color: #FFF;
+    text-align: center;
 }
 
 .footer-links {
@@ -102,10 +103,11 @@
     /*margin-right: 1.5rem;*/
     display: flex;
     justify-content: space-around;
+    width: 20%;
 }
 
 .footer-links a {
-    /*font-size: 2rem;*/
+    font-size: 1.5rem;
     color: #FFF;
     text-decoration: none;
     transition: 0.3s ease-in-out;
