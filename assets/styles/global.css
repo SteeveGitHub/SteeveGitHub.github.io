@@ -74,18 +74,34 @@ html{
 .summary{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
+}
+.summary-table{
+    display: flex;
+    flex-direction: column;
 }
 .summary-table h1{
     font-size: 10rem;
-    color: #F4F4F4;
+    color: #333333;
+    text-align: center;
+    background-color: #F9F9F9;
+    border-radius: 2rem;
+    border: 1px solid #333333;
+    width: 80%;
+    margin: 0 auto 2rem auto;
+}
+.summary .footer{
+    width: 100%;
 }
 .summary-table div{
     background-color: #333333;
     text-align: center;
 }
 .summary-table img{
-    width: auto;
+    width: 100%;
 }
 
 @media screen and (min-width: 1000px){
