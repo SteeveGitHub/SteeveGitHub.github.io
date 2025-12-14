@@ -234,12 +234,22 @@ header {
 /* Espacement vertical entre les cards sur mobile */
 @media (max-width: 768px) {
   #projects .grid.grid-cols-1 {
-    gap: 6rem !important;
+    gap: 3rem !important;
+    padding: 0 1rem !important;
   }
   
   #projects .group.cursor-pointer.p-4 {
-    padding: 2rem 1rem !important;
-    margin-bottom: 2rem !important;
+    padding: 1rem !important;
+    margin-bottom: 1rem !important;
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
+    padding-bottom: 2rem !important;
+    border-bottom: 1px solid hsl(var(--primary) / 0.15);
+  }
+  
+  /* Enlever la bordure du dernier élément */
+  #projects .group.cursor-pointer.p-4:last-child {
+    border-bottom: none !important;
   }
 }
 
@@ -247,15 +257,43 @@ header {
 #projects .relative.w-full.aspect-\[3\/4\] {
   overflow: hidden !important;
   position: relative !important;
+  border-radius: 1.5rem !important;
 }
 
 #projects .relative.w-full.max-w-md {
   overflow: hidden !important;
+  border-radius: 1.5rem !important;
 }
 
-/* Hover effect improvements pour les cards projets */
-#projects .group:hover {
+/* FORCER le hover effect sur TOUTES les cards projets */
+#projects .group.cursor-pointer {
+  transform-origin: center center !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  will-change: transform !important;
+  border-radius: 1.5rem !important;
+  overflow: hidden !important;
+}
+
+#projects .group.cursor-pointer:hover {
   transform: scale(1.05) !important;
+  z-index: 10 !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Forcer aussi avec la classe p-4 */
+#projects div.group.cursor-pointer.p-4:hover {
+  transform: scale(1.05) !important;
+  z-index: 10 !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Mobile - Scale plus léger */
+@media (max-width: 768px) {
+  #projects .group.cursor-pointer:hover,
+  #projects .group.cursor-pointer:active {
+    transform: scale(1.03) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+  }
 }
 
 /* Container interne des images - doit aussi couper le débordement */
@@ -274,33 +312,39 @@ header {
   transition: all 0.5s ease !important;
 }
 
-/* Réduire l'écartement pour éviter le débordement visible */
+/* Images empilées - AUCUNE ROTATION pour éviter décalage */
 /* Première image empilée (plus en arrière) */
 #projects .absolute.w-full.h-full:first-child {
-  transform: translate(12px, 12px) rotate(3deg) !important;
+  transform: translate(12px, 12px) !important;
   z-index: 1 !important;
+  transition: transform 0.5s ease !important;
+  border-radius: 1.5rem !important;
+  overflow: hidden !important;
 }
 
 /* Deuxième image empilée (au milieu) */
 #projects .absolute.w-full.h-full:nth-child(2) {
-  transform: translate(6px, 6px) rotate(1.5deg) !important;
+  transform: translate(6px, 6px) !important;
   z-index: 2 !important;
+  transition: transform 0.5s ease !important;
+  border-radius: 1.5rem !important;
+  overflow: hidden !important;
 }
 
 /* Troisième image (visible au premier plan) */
 #projects .absolute.w-full.h-full:nth-child(3),
 #projects .absolute.w-full.h-full:last-child {
-  transform: translate(0, 0) rotate(0deg) !important;
+  transform: translate(0, 0) !important;
   z-index: 3 !important;
+  transition: transform 0.5s ease !important;
+  border-radius: 1.5rem !important;
+  overflow: hidden !important;
 }
 
-/* Hover effect - écarter modérément pour rester dans les limites */
-#projects .group:hover .absolute.w-full.h-full:first-child {
-  transform: translate(18px, 18px) rotate(4deg) scale(1.01) !important;
-}
-
-#projects .group:hover .absolute.w-full.h-full:nth-child(2) {
-  transform: translate(9px, 9px) rotate(2deg) scale(1.005) !important;
+/* Désactiver le scale des images empilées au hover du group */
+#projects .group.cursor-pointer:hover .absolute.w-full.h-full {
+  /* Ne pas modifier le transform des images individuelles */
+  /* Le scale du group parent s'applique à tout */
 }
 
 /* Bannière du titre - mieux positionner sur le footer */
@@ -309,7 +353,7 @@ header {
   left: 0 !important;
   right: 0 !important;
   background: white !important;
-  border-radius: 0 0 1rem 1rem !important;
+  border-radius: 0 0 1.5rem 1.5rem !important;
   padding: 1.5rem !important;
   box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1) !important;
   z-index: 101 !important;
@@ -360,6 +404,51 @@ header {
 .fixed.inset-0.bg-black\/80 {
   background-color: rgba(0, 0, 0, 0.7) !important;
   backdrop-filter: blur(4px) !important;
+}
+
+/* Espacement entre les boutons de pagination et le container d'image */
+.flex.items-center.justify-center.gap-4.mb-8 {
+  margin-bottom: 2rem !important;
+}
+
+/* Container d'image avec marge top pour ajouter de l'espace */
+.relative.w-full.max-w-6xl {
+  margin-top: 1rem !important;
+}
+
+/* Permettre le zoom sur les images du modal - Mobile */
+@media (max-width: 768px) {
+  /* Container de l'image dans le modal */
+  .relative.w-full.max-w-6xl img {
+    touch-action: pinch-zoom !important;
+    max-width: none !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Container scrollable pour le zoom */
+  .relative.w-full.max-w-6xl > div {
+    overflow: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  
+  /* Permettre le zoom avec les doigts */
+  .w-full.rounded-2xl.overflow-hidden {
+    overflow: visible !important;
+  }
+  
+  .w-full.rounded-2xl.overflow-hidden img {
+    cursor: zoom-in !important;
+    transition: transform 0.2s ease !important;
+  }
+}
+
+/* Support du double-tap pour zoomer sur mobile */
+@media (max-width: 768px) {
+  .fixed.z-\[99999\] img {
+    user-select: none !important;
+    -webkit-user-select: none !important;
+  }
 }
 
 /* Pas de box-shadow global sur les containers */
