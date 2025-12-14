@@ -408,3 +408,38 @@ header {
 .mt-8.max-w-4xl span {
   color: white !important;
 }
+
+/* Boutons de pagination - page active en noir avec texte blanc */
+.flex.items-center.gap-3.bg-gradient-to-r button.w-12.h-12.rounded-full {
+  transition: all 0.3s ease !important;
+}
+
+/* Bouton actif - fond noir avec texte blanc */
+.flex.items-center.gap-3.bg-gradient-to-r button.w-12.h-12.rounded-full.bg-white {
+  background: #000000 !important;
+  color: white !important;
+  border: 2px solid white !important;
+  transform: scale(1.15) !important;
+}
+
+/* Bouton actif avec la classe text-purple-600 */
+.flex.items-center.gap-3.bg-gradient-to-r button.w-12.h-12.rounded-full.text-purple-600 {
+  background: #000000 !important;
+  color: white !important;
+  border: 2px solid white !important;
+}
+
+/* Boutons inactifs - semi-transparents avec texte NOIR */
+.flex.items-center.gap-3.bg-gradient-to-r button.w-12.h-12.rounded-full.bg-white\/30 {
+  background: rgba(255, 255, 255, 0.4) !important;
+  color: #000000 !important;
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  font-weight: 600 !important;
+}
+
+.flex.items-center.gap-3.bg-gradient-to-r button.w-12.h-12.rounded-full.bg-white\/30:hover {
+  background: rgba(255, 255, 255, 0.6) !important;
+  color: #000000 !important;
+  transform: scale(1.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.8) !important;
+}
